@@ -1,6 +1,5 @@
 local M = {}
 
--- Register Cedar parser with nvim-treesitter
 function M.setup()
   local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
@@ -14,7 +13,6 @@ function M.setup()
     filetype = "cedar",
   }
 
-  -- Set up filetype detection
   vim.filetype.add({
     extension = {
       cedar = "cedar",
