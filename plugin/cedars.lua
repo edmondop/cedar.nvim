@@ -5,6 +5,6 @@ end
 vim.g.loaded_cedars = 1
 
 -- Only auto-setup if nvim-treesitter is available
-if pcall(require, 'nvim-treesitter') then
-  require('cedars').setup()
+if pcall(require, "nvim-treesitter") then
+  require("cedars").setup()
 end
