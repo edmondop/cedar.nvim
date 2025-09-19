@@ -9,6 +9,8 @@ A Neovim plugin that adds Cedar policy language support with tree-sitter integra
 - 📁 Code folding
 - 📄 Automatic filetype detection for `.cedar` files
 
+![Cedar syntax highlighting](docs/img/cedar.png)
+
 ## Requirements
 
 - Neovim 0.9+
@@ -48,6 +50,7 @@ Plug 'edmondop/cedars.nvim'
 ```
 
 Then add to your `init.lua`:
+
 ```lua
 require('cedars').setup()
 ```
