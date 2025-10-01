@@ -3,6 +3,6 @@ read_globals = {
 }
 
 -- Allow setting vim.g fields
-files["plugin/cedars.lua"] = {
-  globals = { "vim" }
+files["plugin/cedar.lua"] = {
+  globals = { "vim" },
 }

@@ -1,13 +1,13 @@
-local cedars = require("cedars")
+local cedar = require("cedar")
 
-describe("cedars.nvim", function()
+describe("cedar.nvim", function()
   it("can be required without errors", function()
-    assert.is_not_nil(cedars)
-    assert.is_function(cedars.setup)
+    assert.is_not_nil(cedar)
+    assert.is_function(cedar.setup)
   end)
 
   it("registers cedar parser config", function()
-    cedars.setup()
+    cedar.setup()
 
     local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
     assert.is_not_nil(parser_configs.cedar)
@@ -18,7 +18,7 @@ describe("cedars.nvim", function()
   end)
 
   it("sets up filetype detection", function()
-    cedars.setup()
+    cedar.setup()
 
     -- Test that .cedar files are detected correctly
     vim.cmd("edit test.cedar")

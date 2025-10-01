@@ -1,4 +1,4 @@
-# cedars.nvim
+# cedar.nvim
 
 A Neovim plugin that adds Cedar policy language support with tree-sitter integration.
 
@@ -22,10 +22,10 @@ A Neovim plugin that adds Cedar policy language support with tree-sitter integra
 
 ```lua
 {
-  'edmondop/cedars.nvim',
+  'edmondop/cedar.nvim',
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   config = function()
-    require('cedars').setup()
+    require('cedar').setup()
   end,
 }
 ```
@@ -34,10 +34,10 @@ A Neovim plugin that adds Cedar policy language support with tree-sitter integra
 
 ```lua
 use {
-  'edmondop/cedars.nvim',
+  'edmondop/cedar.nvim',
   requires = { 'nvim-treesitter/nvim-treesitter' },
   config = function()
-    require('cedars').setup()
+    require('cedar').setup()
   end,
 }
 ```
@@ -46,13 +46,13 @@ use {
 
 ```vim
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'edmondop/cedars.nvim'
+Plug 'edmondop/cedar.nvim'
 ```
 
 Then add to your `init.lua`:
 
 ```lua
-require('cedars').setup()
+require('cedar').setup()
 ```
 
 ## Setup
@@ -98,7 +98,7 @@ forbid(
 The plugin works out of the box with default settings. For advanced configuration:
 
 ```lua
-require('cedars').setup({
+require('cedar').setup({
   -- Add any custom configuration here
 })
 ```
